@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Layouts</title>
+    <style>
+       
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        body {
+            background-image: url('https://imgmedia.lbb.in/media/2019/01/5c47556efb7eb73fc73e3029_1548178798126.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+       
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+       
+        nav {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+       
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a:hover {
+            background-color:lightpink;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+        .content {
+            text-align: center;
+            padding: 40px;
+            color:white;
+        }
+        h1{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               
+                <li class="dropdown">
+                    <a href="#">Home</a>
+                    <div class="dropdown-content">
+                        <a href="#">Cakes</a>
+                        <a href="#">Ice-Creams</a>
+                       
+                    </div>
+                </li>
+               
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Owner</a>
+                        <a href="#">Orders</a>
+                       
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Door Delivery</a>
+                        <a href="#">Same Day Delivery</a>
+                    </div>
+                </li>
+               
+                <li class="dropdown">
+                    <a href="#">Cakes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Pastries</a>
+                        <a href="#">White and Black Forest</a>
+                        <a href="#">Ice-Cream Cakes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="#">+91 7895246123</a>
+                        <a href="#">+91 8642139710</a>
+                       
+                    </div>
+                </li>
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Welcome to Delicious Cakeshop</h1>
+        <p>Love At First Bite.</p>
+    </div>
+</body>
+</html>
